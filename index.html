@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#242625">
+  <title>MEIN TAL 1919 — Maison Suzanna Bars · 24 марта 2027</title>
+  <meta name="description" content="MEIN TAL 1919 — показ новой коллекции Maison Suzanna Bars. 24 марта 2027. Сбор гостей в 19:00, начало показа в 20:00. Дресс-код Black Tie.">
+  <meta property="og:title" content="MEIN TAL 1919 — Maison Suzanna Bars">
+  <meta property="og:description" content="24 марта 2027 · Сбор 19:00 · Начало 20:00 · Black Tie">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://meintal1919.ru/">
+  <link rel="canonical" href="https://meintal1919.ru/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/inter-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/suzanna.webp" as="image">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main id="show" class="landing">
+    <section class="hero" aria-labelledby="campaign-title">
+      <div class="landscape" aria-hidden="true"></div>
+      <img id="suzanna-portrait" class="portrait" src="assets/suzanna.webp" width="1437" height="1785" alt="Сьюзанна Барс в белом костюме с красной перевязью" fetchpriority="high">
+      <header id="site-header" class="site-header">
+        <a class="brand" href="#show" aria-label="Maison Suzanna Bars — начало страницы">
+          <img class="brand-lettering" src="assets/brand-lettering.webp" alt="Maison Suzanna Bars" width="1559" height="97">
+          <img class="brand-needle" src="assets/brand-needle.svg" alt="" aria-hidden="true">
+        </a>
+        <nav class="desktop-nav" aria-label="Основная навигация">
+          <a href="#show">Показ</a>
+          <button type="button" data-panel="collection">Коллекция</button>
+          <button type="button" data-panel="accreditation">Аккредитация</button>
+        </nav>
+        <button id="header-tickets" class="button button-outline" type="button" data-panel="tickets">Купить билеты</button>
+        <button id="mobile-menu-toggle" class="menu-toggle" type="button" aria-label="Открыть меню" aria-haspopup="dialog" aria-controls="navigation-dialog"><span></span><span></span></button>
+      </header>
+      <div id="campaign-artwork" class="campaign">
+        <p class="eyebrow">Показ новой коллекции</p>
+        <h1 id="campaign-title"><span class="sr-only">MEIN TAL 1919</span><img class="campaign-name" src="assets/mein-tal.webp" width="545" height="166" alt="" aria-hidden="true"><img class="campaign-year" src="assets/1919.webp" width="355" height="223" alt="" aria-hidden="true"></h1>
+      </div>
+    </section>
+    <section id="event-details" class="invitation" aria-label="Дата, время и билеты">
+      <div class="invitation-inner">
+        <time id="event-date" class="event-date" datetime="2027-03-24"><span class="date-day">24</span><span class="date-month-year"><span class="date-month">Марта</span><span class="date-year">2027</span></span></time>
+        <div id="gathering-time" class="event-field gathering"><span class="field-label">Сбор гостей</span><time class="field-value" datetime="19:00">19:00</time></div>
+        <div id="show-time" class="event-field start"><span class="field-label">Начало показа</span><time class="field-value" datetime="20:00">20:00</time></div>
+        <div id="dress-code" class="event-field dress"><span class="field-label">Дресс-код</span><span class="field-value">Black Tie</span></div>
+        <button id="primary-tickets" class="button button-primary" type="button" data-panel="tickets"><span>Купить билеты</span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 12h18m-7-7 7 7-7 7"/></svg></button>
+      </div>
+    </section>
+  </main>
+  <dialog id="navigation-dialog" class="navigation-dialog" aria-labelledby="navigation-title">
+    <div class="dialog-top"><p id="navigation-title">Maison Suzanna Bars</p><button class="close-dialog" type="button" data-close aria-label="Закрыть меню">×</button></div>
+    <nav aria-label="Мобильная навигация"><a href="#show" data-nav-close>Показ</a><button data-panel="collection">Коллекция</button><button data-panel="accreditation">Аккредитация</button><button data-panel="tickets">Купить билеты</button></nav>
+  </dialog>
+  <dialog id="information-dialog" class="information-dialog" aria-labelledby="information-title" aria-describedby="information-description">
+    <button class="close-dialog" type="button" data-close aria-label="Закрыть">×</button>
+    <p class="dialog-brand">Maison Suzanna Bars</p><h2 id="information-title">Билеты</h2><p id="information-description">Информация скоро появится.</p>
+    <form method="dialog"><button class="button dialog-button">Понятно</button></form>
+  </dialog>
+</body>
+</html>
